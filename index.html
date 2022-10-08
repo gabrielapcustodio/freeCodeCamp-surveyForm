@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <section class="header">
+      <h1 id="title">Hi!</h1>
+      <p id="description">If you'd like to talk to us or suggest any story for us to cover, please fill out this form</p>
+    </section>
+    <form id="survey-form">
+      <fieldset class="init-form">
+        <label class="question-title" for="name" id="name-label">Name: <input type="text" id="name" placeholder="Insert your name" required></label>
+        <label class="question-title" for="email" id="email-label">Email: <input type="email" id="email" placeholder="Insert your email" required></label>
+        <label class="question-title" for="number" id="number-label">Age: <input type="number" id="number" min="14" max="100" placeholder="14" required></label>
+        </fieldset>
+        <fieldset>
+          <label class="question-title"  for="options">Choose an option:</label>
+          <select name="options" id="dropdown">
+            <option value="story" >I'd like to suggest a story</option>
+            <option value="opinion">I'd like to share my opinion</option>
+            <option value="error">I've found an error</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label class="question-title"  for="contact-text">Write it here:<textarea id="contact-text" name="contact-text" rows="6" cols="60" placeholder="Talk to us"></textarea></label>
+        </fieldset>
+        <fieldset>
+          <label class="question-title" >Would you like us to contact you back?</label><br>
+          <label for="yes"><input type="radio" id="yes" name="contact" value="yes"> Yes</label><br>
+          <label for="no"><input type="radio" id="no" name="contact" value="no"> No</label><br>
+        </fieldset>
+        <fieldset>
+          <label class="question-title" >Would you like to buy some of our products? Check our list:</label><br>
+        <label><input type="checkbox" value="newspaper"> Newspaper</label></br>
+        <label><input type="checkbox" value="magazines"> Magazines</label></br>
+        <label><input type="checkbox" value="books"> Books</label>
+        </fieldset>
+        <fieldset class="submit-form">
+          <input type="submit" id="submit" value="Submit">
+        </fieldset>
+      </form>
+    </body>
+</html>
